@@ -20,20 +20,25 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/installationUnit',
+                    component: () => import('../components/page/safety/machinery/unit/installationUnit/installationUnit.vue'),
+                    meta: { title: '装拆单位' }
+                },
+                {
                     path: '/404',
-                    component: () => import(/* webpackChunkName: "404" */ '../components/page/404.vue'),
+                    component: () => import('../components/page/404.vue'),
                     meta: { title: '404' }
                 },
                 {
                     path: '/403',
-                    component: () => import(/* webpackChunkName: "403" */ '../components/page/403.vue'),
+                    component: () => import('../components/page/403.vue'),
                     meta: { title: '403' }
                 }
             ]
         },
         {
             path: '/login',
-            component: () => import(/* webpackChunkName: "login" */ '../components/page/Login.vue'),
+            component: () => import('../components/page/Login.vue'),
             meta: { title: '登录' }
         },
         {
